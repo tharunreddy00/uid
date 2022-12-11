@@ -1,0 +1,102 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 400px;
+}
+h1{
+margin-left: 30px
+}
+
+.pMain{
+    font-size: 18px;
+    display: inline-block;
+}
+
+input{
+    display: inline;
+    padding: 2px;
+    width: 55px;
+}
+.inputP{
+    width: 30px;
+}
+
+button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+    padding: 2px;
+
+}
+
+
+/*  */
+
+.result{
+    position: absolute;
+    display: inline-block;
+    padding: 12px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 200px;
+}
+
+.pResult{
+        font-size: 18px;
+}
+
+@media screen and (max-width: 500px){
+    
+    h1{
+        font-size: 18px;
+    }
+
+
+    .main{
+        display: inline-block;
+        padding: 10px;
+        margin: 20px;
+        border: 2px solid black;
+        width: 80%;
+    }
+
+    .pMain{
+        font-size: 14px;
+        display: block;
+    }
+    
+    input{
+        font-size: 18px;
+        display: inline;
+        width: 55px;
+    }
+    .inputP{
+        width: 30px;
+    }
+    
+    button{
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: block;
+        font-size: 20px;
+        padding: 8px;
+    
+    }
+    /*  */
+
+    .result{
+        display: block;
+        padding: 12px;
+        margin: 20px;
+        border: 2px solid black;
+        width: 75%;
+    }
+}
