@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+<title>registraion form</title>
+<style>
+img.logo{
+float: left;
+width: 150px;
+height: auto;
+}
+</style>
+</head>
+  <body bgcolor="#e6ebef">
+<img class = "logo" src = "avv logo.png">
+<form>
+<h1 align=center>REGISTRATION FOR AMRITA CYBERNATION 2022</h1>
+<table align=center>
+<tr>
+<td><label for = "name"> FIRST NAME </label></td>
+<td><input type="text" name="first name" id = "name" placeholder="alpha" required/></td>
+</tr>
+<tr>
+<td><label for = "name1">lAST NAME</label></td>
+<td><input type="text" name="last name" id = "name1" placeholder="bob" required/></td>
+</tr>
+       <tr>
+          <td> EMAIL-ID</td>
+          <td><input type="email" name="EMAIL-ID" placeholder="alpha@231" required/></td>
+         </tr>
+  <tr>
+  <td>MOBILE NUMBER</td>
+  <td><input type="text" name="mobile number" placeholder="+918688xxxxx" required/></td>
+  </tr> 
+         <tr>
+         <td>GENDER</td>
+         <td>
+         <input type="radio" name="gender" value="male"/>
+          male
+         <input type="radio" name="gender" value="female"/>
+          female
+         <input type="radio" name="gender" value="other"/>
+          other
+         </td>
+         </tr>
+    <tr>
+    <td>DATE OF BIRTH </td>
+    <td><input type="date" name="DOB" max="2025-31-12" required/></td>
+    </tr>
+               <tr>
+               <td>ADDRESS</td>
+               <td><textarea name="address" rows="10" cols="50"></textarea></td>
+                </tr>
+   <tr>
+<td>CITY</td>
+<td><input type="text" name="City" placeholder="Bangalore" required/>
+</td>
+</tr>
+<tr>
+<td>PIN CODE</td>
+<td><input type="Number" name="PinCode" placeholder="560068" required/>
+</td>
+</tr>
+<tr>
+<td>STATE</td>
+<td><input type="text" name="State" placeholder="Karnataka" required/>
+</td>
+</tr>
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="Country" placeholder="India" required /></td>
+</tr>
+       <tr>
+       <td>IDENTITY</td>
+       <td>
+       <select name="role" id="id_role">
+       <option value="student">student</option>
+       <option value="faculty">faculty/research scholors</option>
+       <option value="others">indusrty/others</option>
+       </select>
+       </td>
+       </tr>
+  <tr>
+ <td>SELECT EVENTS</td>
+ <td>
+ <input type="checkbox" name="Cyber Conclave'22" value="cc'22"/>
+ Cyber Conclave'22<br>
+ <input type="checkbox" name="cyber industry'22" value="cim'22"/>
+ Cyber Industry Meet'22<br>
+ <input type="checkbox" name="cyber tech'22" value="ctf'22"/>
+ National Amrita Cyber Tech Fest'22<br>
+ <input type="checkbox" name="cyber abyaan'22" value="ca'22"/>
+ Cyber Abyaan'22 (social cyber awareness drive)
+</td>
+</tr>
+          <tr>
+          <td colspan="2" align="center">
+          <input type="submit" value="Submit To Register"></td></tr>
+           <tr>
+          <td colspan="2" align="center">
+                 <input type="reset" value="RESET"></td>
+             </tr>
+
+</form>
+  </body>
