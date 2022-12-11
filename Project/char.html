@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" href="IMG/M.png">
+<head>
+	<meta charset="UTF-8">
+	<title>Avengers Characters</title>
+	<style>   
+
+
+		body{
+			font-family: tahoma;
+			font-size: 15px;
+			line-height: 1.75;
+			margin: 0;
+			padding: 0;
+		}
+
+		#timeline{
+			display: flex;
+			background-color: #ffffff;
+		}
+
+        #timeline:hover .item{
+        	width: 23.3333%;
+        }
+
+        .item{
+        	transform: translate3d(0,0,0);
+        	position: relative;
+        	width: 25%;
+        	height: 100vh;
+        	min-height: 600px;
+        	color: white;
+        	overflow: hidden;
+        	transition: width 0.5s ease;
+        }
+
+        .item:before, .item:after{
+        	transform: translate3d(0,0,0);
+        	content: '';
+        	position: absolute;
+        	left: 0;
+        	top: 0;
+        	width: 100%;
+        	height: 100%;
+        }
+
+        .item:after{
+        	background: rgba(21,126,209,0.85);
+        	opacity: 1;
+        	transition: opacity 0.5s ease;
+        }
+
+        .item:before{
+        	background: linear-gradient(to bottom, rgba(0,0,0,0,) 0%, rgba(0,0,0,1) 75%);
+        	z-index: 1;
+        	opacity: 0;
+        	transform: translate3d(0,0,0) translateY(50%);
+        	transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .item:hover{
+        	width: 30% !important;
+        }
+
+        .item:hover .content{
+        	opacity: 1;
+        	transform: translateY(0);
+        	transition: all 0.75s ease 0.5s;
+        }
+
+        .item:hover .bg{
+        	filter: grayscale(0);
+        	z-index: 456;
+
+        }
+
+        .content{
+        	transform: translate3d(0,0,0) translateY(25px);
+        	position: relative;
+        	z-index: 1;
+        	text-align: center;
+        	margin: 0 1.618em;
+        	top: 55%;
+        	opacity: 0;
+        }
+
+        .content h1{
+        	font-family: tahoma;
+        	text-transform: uppercase;
+        	color: deepskyblue;
+        	font-size: 1.44rem;
+            font-weight: normal;
+        }
+
+        .year{
+        	position: absolute;
+        	top: 50%;
+        	left: 50%;
+        	transform: translateX(-50%) translateY(-50%);
+        	z-index: 1;
+        	border-top: 1px solid white;
+        	border-bottom: 1px solid white;
+        }
+
+        .year p{
+        	font-family: tahoma;
+        	font-size: 1.728rem;
+        	line-height: 0;
+        }
+
+        .bg{
+        	transform: translate3d(0,0,0);
+        	position: absolute;
+        	width: 100%;
+        	height: 100%;
+        	top: 0;
+        	left: 0;
+        	background-size: cover;
+        	background-position: center center;
+        	transition: filter 0.5s ease;
+        	filter: grayscale(100%);
+        }
+
+        p{
+        	font-family: tahoma;
+        	font-weight: normal;
+        }
+
+        .btn {
+            border-radius: 25px;
+            background-color: snow;
+            width: 50px;
+            border: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 90%;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: red;
+            color: white;
+            width: 100px;
+            transition: 0.5s all ease;
+
+        }
+
+        #btnb {
+           background-color: black;
+           color: snow;
+           width: 200px;
+           padding: 15px;
+           margin: 25px;
+           border-radius: 50px;
+        }
+
+        #btnb:hover {
+           background-color: orangered;
+           transition: 1s all ease;
+        }
+
+        .text-center {
+           text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+	  <section id="timeline">
+	  	<div class="item">
+	  		<a href="1c.html"><div class="bg" style="background:url('IMG\\iron4.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>IRON MAN</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Iron Man</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  	    </div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="2c.html"><div class="bg" style="background-image: url('IMG\\captain.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>CAPTAIN</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Captain America</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="3c.html"><div class="bg" style="background-image: url('IMG\\hulk.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>HULK</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Hulk</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+	  			
+
+
+        <div class="item">
+	  		  		<a href="4c.html"><div class="bg" style="background-image: url('IMG\\strange.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>DR.STRANGE</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Dr.Strange </h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>	
+	  	    </div>
+	  	</div>	
+
+</section>
+
+
+
+<section id="timeline">
+
+
+
+	  	<div class="item">
+	  			  		<a href="5c.html"><div class="bg" style="background:url('IMG\\spider.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>SPIDER MAN</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Spider Man</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  	    </div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="6c.html"><div class="bg" style="background-image: url('IMG\\panther.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>PANTHER</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Black Panther</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="7c.html"><div class="bg" style="background-image: url('IMG\\widow.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>NATASHA</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this	is Black Widow</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+	  			
+
+
+        <div class="item">
+	  		  		<a href="8c.html"><div class="bg" style="background-image: url('IMG\\hawkeye.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>HAWKEYE</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Hawkeye</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>	
+	  	    </div>
+	  	</div>
+
+	</section>
+
+
+
+	<section id="timeline">
+
+
+
+	  	<div class="item">
+	  			  		<a href="9c.html"><div class="bg" style="background:url('IMG\\wanda.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>WANDA</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Wanda</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  	    </div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="10c.html"><div class="bg" style="background-image: url('IMG\\vision.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>VISION</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Vision</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+
+
+
+        <div class="item">
+	  		  		<a href="11c.html">1<div class="bg" style="background-image: url('IMG\\thor.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>THOR</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this	is Thor</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>
+	  		</div>
+	  	</div>
+	  			
+
+
+        <div class="item">
+	  		  		<a href="12c.html"><div class="bg" style="background-image: url('IMG\\captain marvel.jpg');"></div></a>
+	  		<div class="year">
+	  			<p>C.MARVEL</p>
+	  		</div>
+	  		<div class="content">
+	  			<h1>Hi this is Captain Marvel</h1>
+	  			<p>
+	  				........................................................................................................................................................................................................................
+	  			</p>	
+	  	    </div>
+	  	</div>
+
+	</section>
+
+
+	<div class="text-center">
+	    <a href="index.html"><button id="btnb"> Home </button></a>
+    </div>
+
+
+</body>
+</html>  

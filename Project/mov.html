@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="IMG/M.png">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+    <div class="wrapper run-animation" id="animate">
+        <div class="logo">
+
+            <span class="marvel">marvel</span>
+            <span class="studios">studios</span>
+
+        </div>
+    </div>
+
+    <div class="images"></div>
+
+    <div class="main">
+        <div class="box">
+            <div class="box-img">
+                <a href="no way home.html"><img src="IMG/C1.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Spider Man No way Home</h3>
+                <p>imdb 9.9/10</P>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <a href="endgame.html"><img src="IMG/C2.webp">
+            </div>
+
+            <div class="content">
+                <h3>End Game</h3>
+                <p>imdb 10/10</P>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <a href="infinity war.html"><img src="IMG/C3.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Infinity War</h3>
+                <p>imdb 7.3/10</P>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <a href="age of ultron.html"><img src="IMG/C4.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Avengers Age of Ultron</h3>
+                <p>imdb 7.3/10</P>
+            </div>
+        </div>
+    </div>
+    <center>
+        <a href="Cinema.html"><button id="btnb"> Book Ticket</button></a>
+        <a href="index.html"><button id="btnb"> Home </button></a>
+    </center>
+<!-- This animation is taken reference from  code pen (https://codepen.io/126757/pen/zmzRMy) -->
+    <script>
+        element = document.getElementById("animate");
+
+        if (element) {
+            // reset the transition by...
+            element.addEventListener("click", function(e) {
+                e.preventDefault;
+
+                console.log('element', element.classList);
+
+                // removing the class
+                element.classList.remove("run-animation");
+
+                // triggering reflow
+                void element.offsetWidth;
+
+                // and re-adding the class
+                element.classList.add("run-animation");
+            }, false);
+        }
+    </script>
+
+</body>

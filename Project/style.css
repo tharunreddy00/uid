@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgba(255, 254, 254, 0.849);
+    background-size: initial;
+    background-color: black;
+}
+
+.main {
+    background-image: url(IMG/bg.gif);
+    height: 750px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*<========L0G0=============================================>*/
+
+#logo {
+    font-size: 32px;
+}
+
+#logo:hover {
+    color: red;
+    transition: 0.5s ease-out;
+    opacity: 0.5;
+}
+
+
+/*<=====Navigation Bar=======================================>*/
+
+#Nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px 5%;
+    font-family: 'Zen Dots';
+    transition: 0.5s ease-out;
+}
+
+
+/*<=====Navigation Menu=======================================>*/
+
+ul.nbm {
+    display: table;
+    width: 80%;
+    text-align: center;
+}
+
+ul.nbm>li {
+    /*Making every element of list as table cell*/
+    display: table-cell;
+}
+
+ul li a {
+    color: rgba(223, 217, 217, 0.842);
+    transition: 0.5s all ease;
+}
+
+ul li a:hover {
+    color: red;
+    transition: 0.5s all ease;
+}
+
+
+/*<========Tittle=============================================>*/
+
+.mh {
+    color: white;
+}
+
+.title {
+    display: flex;
+    font-family: 'Trade Winds';
+    transition: 0.5s all ease;
+    padding: 20% 20%;
+    padding-bottom: 0;
+}
+
+.typed-cursor {
+    font-size: 35px;
+}
+
+.th {
+    display: flex;
+    padding-left: 20%;
+    font-family: 'Gruppo';
+    font-style: italic;
+    font-size: 20px;
+}
+
+.outb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: 'Megrim';
+    position: relative;
+}
+
+.in1 {
+    color: transparent;
+}
+
+.in2 {
+    color: transparent;
+    position: absolute;
+}
+
+.in3 {
+    color: transparent;
+    position: absolute;
+}
+
+.in1::before {
+    content: attr(data-text);
+    position: absolute;
+    margin: left 5px;
+    color: orangered;
+    border-right: 2px solid orangered;
+    width: 0px;
+    overflow: hidden;
+    animation: slide 6s linear infinite;
+    animation-delay: 7s;
+    border-width: 0;
+}
+
+.in2::before {
+    content: attr(data-text);
+    position: absolute;
+    margin: left 5px;
+    color: green;
+    border-right: 2px solid green;
+    width: 0px;
+    overflow: hidden;
+    animation: slide1 6s linear infinite;
+    animation-delay: 7s;
+    border-width: 0;
+}
+
+.in3::before {
+    content: attr(data-text);
+    position: absolute;
+    margin: left 5px;
+    color: rgba(255, 255, 0, 0.342);
+    border-right: 2px solid yellow;
+    width: 0px;
+    overflow: hidden;
+    animation: slide2 6s linear infinite;
+    animation-delay: 7s;
+    border-width: 0;
+}
+
+@keyframes slide {
+    15% {
+        width: 200px;
+        border-width: 2px;
+    }
+    30%,
+    100% {
+        width: 0px;
+        border-width: 0;
+    }
+}
+
+@keyframes slide1 {
+    0%,
+    30% {
+        width: 0px;
+        border-width: 0;
+    }
+    45% {
+        width: 200px;
+        border-width: 2px;
+    }
+    60%,
+    100% {
+        width: 0px;
+        border-width: 0;
+    }
+}
+
+@keyframes slide2 {
+    0%,
+    60% {
+        width: 0px;
+        border-width: 0;
+    }
+    75% {
+        width: 250px;
+        border-width: 2px;
+    }
+    100% {
+        width: 0px;
+        border-width: 0;
+    }
+}
+
+
+/*<========Characters=============================================>*/
+
+.hc {
+    font-family: 'Zen Dots';
+    font-size: 22px;
+    padding: 25px 25px 0px 25px;
+    color: darkred;
+}
+
+.smallb {
+    align-items: center;
+    border-radius: 25px;
+    background-color: snow;
+    color: black;
+    width: 200px;
+    height: 350px;
+    font-family: 'Tenor Sans';
+    font-size: 10px;
+}
+
+.smallb:hover {
+    background-color: red;
+    transition: 0.75s;
+    color: white;
+}
+
+.smallb img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 200px;
+    height: 300px;
+    top: 0;
+}
+
+td {
+    width: 2000px;
+}
+
+.sec2 {
+    position: relative;
+    text-align: center;
+}
+
+.para {
+    padding: 20px 20px 20px 20px;
+    font-family: 'Gruppo';
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 25px;
+    background-color: snow;
+    width: 50px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90%;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+    width: 100px;
+    transition: 0.5s all ease;
+}
+
+
+/*<========Footer=============================================>*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+footer {
+    background: rgba(128, 128, 128, 0.301);
+    height: 200px;
+}
+
+.footer {
+    margin-top: 50px;
+    position: relative;
+    font-family: 'Zen Dots';
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+    color: darkred;
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#fi {
+    border-radius: 25px;
+    width: 300px;
+    float: left;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-bottom: 0;
+}
+
